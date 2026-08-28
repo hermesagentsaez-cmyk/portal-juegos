@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Juegos para Niños — Portal Gratis</title>
-<meta name="description" content="Juegos HTML5 gratis para niños: Frutas Mágicas, Memoria y más. Juega en el navegador, sin descargas.">
+<meta name="description" content="5 juegos HTML5 gratis para niños: Frutas Mágicas, Memoria, Salto Dino, Pesca Feliz y Reacción de Colores. Juega en el navegador, sin descargas.">
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
   body {
@@ -15,8 +15,8 @@
   h1 { font-size: 2rem; margin-bottom: 0.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
   p.sub { opacity: 0.9; margin-bottom: 2rem; font-size: 1.1rem; }
   .grid {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem; max-width: 900px; margin: 0 auto;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem; max-width: 1100px; margin: 0 auto;
   }
   .card {
     background: rgba(255,255,255,0.15); backdrop-filter: blur(10px);
@@ -32,38 +32,44 @@
     padding: 0.2rem 0.8rem; font-size: 0.75rem; margin-top: 0.6rem; font-weight: bold;
   }
   footer { margin-top: 2.5rem; opacity: 0.8; font-size: 0.85rem; }
-  /* Ad space */
   .ad-slot {
     background: rgba(255,255,255,0.08); border: 2px dashed rgba(255,255,255,0.3);
     border-radius: 12px; padding: 1rem; max-width: 728px; margin: 2rem auto;
     font-size: 0.8rem; color: rgba(255,255,255,0.7); min-height: 60px;
     display: flex; align-items: center; justify-content: center;
   }
-  /* TODO_ADSENSE_AQUI: pegar el script de AdSense aquí cuando Mauro tenga la cuenta */
+  /* TODO_ADSENSE_AQUI: pegar script de AdSense aquí cuando Mauro tenga la cuenta */
 </style>
 </head>
 <body>
   <h1>🎮 Juegos para Niños</h1>
-  <p class="sub">Juegos gratis, divertidos y seguros — jugá directo en el navegador</p>
+  <p class="sub">5 juegos gratis, divertidos y seguros — jugá directo en el navegador</p>
 
   <div class="grid">
     <a class="card" href="https://hermesagentsaez-cmyk.github.io/frutas-magicas/">
-      <span class="emoji">🍎</span>
-      <h2>Frutas Mágicas</h2>
+      <span class="emoji">🍎</span><h2>Frutas Mágicas</h2>
       <p>Atrapá frutas con la cesta, sumá puntos y evitá las bombas. ¡Cada nivel es más rápido!</p>
       <span class="badge">¡Nuevo!</span>
     </a>
     <a class="card" href="https://hermesagentsaez-cmyk.github.io/juego-memoria/">
-      <span class="emoji">🧠</span>
-      <h2>Memoria Emojis</h2>
+      <span class="emoji">🧠</span><h2>Memoria Emojis</h2>
       <p>Encontrá las parejas de emojis antes de que se acabe el tiempo. Ejercitá tu memoria.</p>
-      <span class="badge">Próximamente</span>
+      <span class="badge">¡Nuevo!</span>
     </a>
     <a class="card" href="https://hermesagentsaez-cmyk.github.io/juego-runner/">
-      <span class="emoji">🏃</span>
-      <h2>Corredor Espacial</h2>
+      <span class="emoji">🏃</span><h2>Salto Dino</h2>
       <p>Saltá los obstáculos y corré lo más lejos que puedas. ¡Qué tan lejos llegás?</p>
-      <span class="badge">Próximamente</span>
+      <span class="badge">¡Nuevo!</span>
+    </a>
+    <a class="card" href="https://hermesagentsaez-cmyk.github.io/juego-pesca/">
+      <span class="emoji">🎣</span><h2>Pesca Feliz</h2>
+      <p>Lanzá el anzuelo y atrapá peces para sumar puntos. ¡Cuidado con las botas!</p>
+      <span class="badge">¡Nuevo!</span>
+    </a>
+    <a class="card" href="https://hermesagentsaez-cmyk.github.io/juego-colores/">
+      <span class="emoji">⚡</span><h2>Reacción de Colores</h2>
+      <p>Tocá el color correcto antes de que se acabe el tiempo. ¡Poné a prueba tus reflejos!</p>
+      <span class="badge">¡Nuevo!</span>
     </a>
   </div>
 
@@ -76,14 +82,5 @@
     <p>Juegos 100% gratis, sin descargas, sin registro. Hechos con ❤️ para los más chicos.</p>
     <p style="margin-top:0.3rem">¿Te gustan? ¡Compartilos con otros papás!</p>
   </footer>
-
-  <script>
-    // Contador de visitas interno (gratis, localStorage + contador simple)
-    if (localStorage.getItem('portal_visits')) {
-      localStorage.setItem('portal_visits', parseInt(localStorage.getItem('portal_visits')) + 1);
-    } else {
-      localStorage.setItem('portal_visits', 1);
-    }
-  </script>
 </body>
 </html>
